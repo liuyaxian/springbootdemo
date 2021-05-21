@@ -100,6 +100,20 @@ spring-boot-starter-web jar spring-webmvc
   <scope>compile</scope>
   </dependency> 
 ~~~~
+# 2、容器功能
+## 2.1、组件添加
+### 1、@Configuration 
+- 基本使用
+- Full （全）模式与lite（轻对象）模式
+ * 示例：
+ * 最佳实战：
+ ~~~~ xml
+  配置类组件之间无依赖关系用lite 模式， 加速容器启动过程， 减少判断。
+  配置类组件之间有依赖关系， 方法会被调用得到之前单示例组件， 用full 模式
+ //@Configuration(proxyBeanMethods=false)  lite（轻对象）模式
+ ~~~~
+### 1、@Configuration
+
 
 #### 
 
