@@ -1,0 +1,56 @@
+spring:
+  mvc:
+    contentnegotiation:
+      favor-parameter: true
+## 普通的值(数字、字符串、布尔)、日期、对象、数组、集合等。
+##普通值
+#K: V
+#"": 双引号；不会转义字符串里面的特殊字符；特殊字符会作为本身想表示的意思
+## 例如：
+#name:   "zhangsan \n lisi"：输出；zhangsan 换行  lisi
+#
+#''：单引号；会转义特殊字符，特殊字符最终只是一个普通的字符串数据
+#name1: zhangshan
+#name2: lisi
+#name3: 'zhang \n lisi'
+#name4: "zhang \n lisi"
+#age: 19
+#flag: true
+##日期
+#date: 2020-09-01
+## 对象 （属性和值） map （键值对）
+## 在下行来写对象的属性和值的关系， 注意缩进
+#people:
+#  name: zhangsan
+#  age: 11
+##行内写法：
+#p1eople: {nane: zhangsan, age: 11}
+#
+##数组 list set
+#pets:
+#  - dog
+#  - pig
+#  - cat
+##行内写法
+#pets1: [dog,pig,cat]
+##数组对象、 list对象 set 对象
+#peoples:
+#  - name: zhangsan
+#    age: 22
+#  - name: lisi
+#    age: 21
+#  - {name: lisi, age: 29}
+#
+#person1s:
+#  boss: false
+#  age: 22
+#  maps:
+#    k1: v3
+#    k2: v4
+#  lists:
+#    - name: zjag
+#      age: 11
+#    - name: sf
+#      age: 12
+#    - {name: dd, age: 13}
+#  birth: 2101/08/09
